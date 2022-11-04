@@ -27,7 +27,7 @@ __Hover over any of the charts to see more detail__
 
 col2, space2, col3 = st.columns((10,1,10))
 
-select_year = st.sidebar.selectbox("Select year to display data from:", sorted(pd.unique(df_co2['year'])))
+select_year = st.sidebar.selectbox("Select year to display data from:", sorted(pd.unique(df_co2['year']), reverse=1))
 
 
 with col2:
